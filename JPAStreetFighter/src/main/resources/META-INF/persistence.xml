@@ -6,13 +6,13 @@
     </provider>
     
     
-    <class>com.skilldistillery.jpacrud.entities.Character</class>
+    <class>com.skilldistillery.jpacrud.entities.GamePlayer</class>
    
 
     <properties>
     
-      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/street_fightdb?useSSL=false&amp;useLegacyDatetimeCode=false&amp;serverTimezone=US/Mountain" />
-      <property name="javax.persistence.jdbc.user" value="steetfightuser"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/street_fighterdb?useSSL=false&amp;useLegacyDatetimeCode=false&amp;serverTimezone=US/Mountain" />
+      <property name="javax.persistence.jdbc.user" value="streetfightuser"/>
       <property name="javax.persistence.jdbc.password" value="Bobby0104$" />
       <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
 

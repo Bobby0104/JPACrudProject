@@ -4,11 +4,13 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
-public class Character {
+@Table(name = "game_character")
+public class GamePlayer {
 
-	public Character() {
+	public GamePlayer() {
 		super();
 	}
 
@@ -78,7 +80,7 @@ public class Character {
 
 	@Override
 	public String toString() {
-		return "Character [id=" + id + ", name=" + name + ", gender=" + gender + ", origin=" + origin + ", fightStyle="
+		return "GamePlayer [id=" + id + ", name=" + name + ", gender=" + gender + ", origin=" + origin + ", fightStyle="
 				+ fightStyle + ", specialMove=" + specialMove + "]";
 	}
 

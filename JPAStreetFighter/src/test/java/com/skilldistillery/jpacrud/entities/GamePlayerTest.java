@@ -12,12 +12,12 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class CharacterTest {
+class GamePlayerTest {
 	
 	
 	private static EntityManagerFactory emf;
 	private static EntityManager em;
-	private Character character;
+	private GamePlayer gamePlayer;
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
@@ -33,7 +33,7 @@ class CharacterTest {
 	void setUp() throws Exception {
 		
 		em = emf.createEntityManager();
-		character = em.find(Character.class, 1);
+		gamePlayer = em.find(GamePlayer.class, 1);
 	}
 
 	@AfterEach
@@ -44,8 +44,8 @@ class CharacterTest {
 
 	@Test
 	void test_Character_entity_mapping() {
-		assertNotNull(character);
-		assertEquals("Ryu",character.getName());
+		assertNotNull(gamePlayer);
+		assertEquals("Ryu",gamePlayer.getName());
 	}
 
 }
