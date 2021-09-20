@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>All Players</title>
 </head>
 <body>
 
@@ -23,7 +23,7 @@
 				<th>Special Move</th>
 
 			</tr>
-			<c:forEach var="gamePlayer" items="${fighters}">
+			<c:forEach var="gamePlayer" items="${}">
 				<tr>
 					<td>${gamePlayer.id}</td>
 					<td>${gamePlayer.name}</td>

@@ -8,7 +8,7 @@
 </head>
 <body>
 
-title>Delete Player</title>
+<title>Delete Player</title>
 </head>
 <body>
 	<div>

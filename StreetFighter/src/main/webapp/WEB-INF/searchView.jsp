@@ -11,13 +11,13 @@
 <body>
 <div>
 		<c:choose>
-			<c:when test="${not empty monster}">
-				<span>Player ID: </span>${player.id}<br />
-				<span>Player Name: </span>${player.name}<br />
-				<span>Player Gender: </span>${player.gender}<br />
-				<span>Player Origin: </span>${player.origin}<br />
-				<span>Player Fight Style: </span>${player.fightStyle}<br />
-				<span>Player Special Move: </span>${player.specialMove}<br />
+			<c:when test="${not empty gmaePlayer}">
+				<span>Player ID: </span>${gamePlayer.id}<br />
+				<span>Player Name: </span>${gamePlayer.name}<br />
+				<span>Player Gender: </span>${gmaePlayer.gender}<br />
+				<span>Player Origin: </span>${gamepPayer.origin}<br />
+				<span>Player Fight Style: </span>${gmaepPlayer.fightStyle}<br />
+				<span>Player Special Move: </span>${gmaePlayer.specialMove}<br />
 				<span>Player : </span>
 				<br />
 

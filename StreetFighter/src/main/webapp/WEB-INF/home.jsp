@@ -21,13 +21,13 @@
 	<h3>Add a new Player</h3>
 	<a href="add.jsp">Add</a>
 
-	<h3>Update a PLAYER</h3>
+	<h3>Update a Player</h3>
 	<a href="update.jsp">Update</a>
 
-	<h3>Delete a PLAYER</h3>
+	<h3>Delete a Player</h3>
 	<a href="delete.jsp">Delete</a>
 
-	<h3>Show all Players</h3>
+	<h3>Find all Players</h3>
 	<a href="findAll.jsp">Show All</a>
 
 

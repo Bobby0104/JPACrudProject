@@ -13,7 +13,7 @@
 		A new Player has been added to your database!
 	</c:when>
 		<c:otherwise>
-		Error updating database!
+	
 	</c:otherwise>
 	</c:choose>
 	</div>

@@ -31,14 +31,14 @@ public class StreetFighterController {
 		return "searchView";
 	}
 
-//	@RequestMapping(path = "add.do")
-//	public String createPlayer(GamePlayer gamePlayer, Model model) {
-//		boolean isAdded = dao.addPlayer(gamePlayer);
-//		if (isAdded == true) {
-//			model.addAttribute("isAdded", isAdded);
-//		}
-//		return "addView";
-//	}
+	@RequestMapping(path = "add.do")
+	public String addPlayer(GamePlayer gamePlayer, Model model) {
+		boolean isAdded = dao.updatePlayer(gamePlayer);
+		if (isAdded == true) {;
+			model.addAttribute("isAdded", isAdded);
+		}
+		return "addView";
+	}
 
 	@RequestMapping(path = "get.do")
 	public String getPlayer(int id, Model model) {
@@ -68,7 +68,7 @@ public class StreetFighterController {
 
 	@RequestMapping(path = "findAll.do")
 	public String findAll(Model model) {
-		model.addAttribute("monsters", dao.findAll());
+		model.addAttribute("gamePlayer", dao.findAll());
 		
 		return "findAllView";
 		
